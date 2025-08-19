@@ -502,4 +502,5 @@ async def smell_error(ctx, error):
         await ctx.send(f"Slow down there, smell detective! Try again in {error.retry_after:.1f} seconds! 👃⏰")
 
 # Run the bot
-bot.run(os.getenv('DISCORD_TOKEN'))s
+bot.run(os.getenv('DISCORD_TOKEN'))
+

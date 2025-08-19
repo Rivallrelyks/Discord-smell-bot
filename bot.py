@@ -502,15 +502,4 @@ async def smell_error(ctx, error):
         await ctx.send(f"Slow down there, smell detective! Try again in {error.retry_after:.1f} seconds! 👃⏰")
 
 # Run the bot
-bot.run(os.getenv('DISCORD_TOKEN'))s Stand: 「STINKY FINGERS」! (JoJo) ✋💨",
-            f"Kono {member.mention} da! And I smell terrible! (JoJo) 😈💨",
-            f"Is this a pigeon? No, it's {member.mention}'s body odor! (Butterfly meme/Anime) 🦋💨",
-            f"{member.mention}-san... your smell is sugoi! (Weeb talk) 🎌💨",
-            f"Senpai noticed {member.mention}... unfortunately! (Anime trope) 👀💨",
-            f"{member.mention} used Talk no Jutsu... it failed because of the smell! (Naruto) 💬💨",
-            f"Ultra Instinct can't dodge {member.mention}'s stench! (Dragon Ball) ⚡👃",
-            f"{member.mention}'s Bankai: Stinky Blade of Ultimate Funk! (Bleach) ⚔️💨",
-            f"Even Death Note couldn't write away {member.mention}'s smell! (Death Note) 📓💨",
-            f"{member.mention} is the main character... of a hygiene horror anime! (Anime MC) 📺💀",
-            f"Kawaii on the outside, stinky on the inside - {member.mention}! (Kawaii culture) 🎀💨",
-            f"{member.mention}'
+bot.run(os.getenv('DISCORD_TOKEN'))s

@@ -45,14 +45,14 @@ async def tell_smell(ctx, member: discord.Member = None):
     smell_counts[member.id] += 1
     
     # Different messages based on smell count
-    if smell_counts[member.id] >= 10:
+    if smell_counts[member.id] >= 10 and smell_counts[member.id] % 5 == 0:
         special_messages = [
             f"🏆 LEGENDARY STINKER ALERT! 🏆 {member.mention} has been smelled {smell_counts[member.id]} times! They're officially the server's stinkiest legend!",
             f"🎖️ {member.mention} has achieved MAXIMUM STINK LEVEL ({smell_counts[member.id]} smells)! Scientists want to study them!",
             f"👑 BOW DOWN TO THE STINK KING/QUEEN! 👑 {member.mention} has been smelled {smell_counts[member.id]} times!"
         ]
         message = random.choice(special_messages)
-    elif smell_counts[member.id] >= 5:
+    elif smell_counts[member.id] >= 5 and smell_counts[member.id] % 5 == 0:
         message = f"🚨 REPEAT OFFENDER! 🚨 {member.mention} has been caught smelling {smell_counts[member.id]} times! (They're getting used to it...)"
     else:
         # Regular smell messages
@@ -270,17 +270,6 @@ async def tell_smell(ctx, member: discord.Member = None):
             f"Yare yare daze... {member.mention} needs a shower! (JoJo) 🚬🚿",
             f"MUDA MUDA MUDA! {member.mention}'s attempts at hygiene! (JoJo) 👊💨",
             f"ORA ORA ORA! {member.mention} vs basic cleanliness! (JoJo) 👊🧼",
-            f"{member.mention}'s Stand: 「STINKY FINGERS」! (JoJo) ✋💨",
-            f"Kono {member.mention} da! And I smell terrible! (JoJo) 😈💨",
-            f"Is this a pigeon? No, it's {member.mention}'s body odor! (Butterfly meme/Anime) 🦋💨",
-            f"{member.mention}-san... your smell is sugoi! (Weeb talk) 🎌💨",
-            f"Senpai noticed {member.mention}... unfortunately! (Anime trope) 👀💨",
-            f"{member.mention} used Talk no Jutsu... it failed because of the smell! (Naruto) 💬💨",
-            f"Ultra Instinct can't dodge {member.mention}'s stench! (Dragon Ball) ⚡👃",
-            f"{member.mention}'s Bankai: Stinky Blade of Ultimate Funk! (Bleach) ⚔️💨",
-            f"Even Death Note couldn't write away {member.mention}'s smell! (Death Note) 📓💨",
-            f"{member.mention} is the main character... of a hygiene horror anime! (Anime MC) 📺💀",
-            f"Kawaii on the outside, stinky on the inside - {member.mention}! (Kawaii culture) 🎀💨",
             f"{member.mention}'s smell has entered the chat like a Titan! (Attack on Titan) 🗡️👹",
             f"Sasuke left the village because of {member.mention}'s smell! (Naruto) 🏃‍♂️💨",
             f"{member.mention}'s quirk: Eternal Stench! (My Hero Academia) 🦸‍♂️💨",
@@ -513,5 +502,15 @@ async def smell_error(ctx, error):
         await ctx.send(f"Slow down there, smell detective! Try again in {error.retry_after:.1f} seconds! 👃⏰")
 
 # Run the bot
-bot.run(os.getenv('DISCORD_TOKEN'))
-
+bot.run(os.getenv('DISCORD_TOKEN'))s Stand: 「STINKY FINGERS」! (JoJo) ✋💨",
+            f"Kono {member.mention} da! And I smell terrible! (JoJo) 😈💨",
+            f"Is this a pigeon? No, it's {member.mention}'s body odor! (Butterfly meme/Anime) 🦋💨",
+            f"{member.mention}-san... your smell is sugoi! (Weeb talk) 🎌💨",
+            f"Senpai noticed {member.mention}... unfortunately! (Anime trope) 👀💨",
+            f"{member.mention} used Talk no Jutsu... it failed because of the smell! (Naruto) 💬💨",
+            f"Ultra Instinct can't dodge {member.mention}'s stench! (Dragon Ball) ⚡👃",
+            f"{member.mention}'s Bankai: Stinky Blade of Ultimate Funk! (Bleach) ⚔️💨",
+            f"Even Death Note couldn't write away {member.mention}'s smell! (Death Note) 📓💨",
+            f"{member.mention} is the main character... of a hygiene horror anime! (Anime MC) 📺💀",
+            f"Kawaii on the outside, stinky on the inside - {member.mention}! (Kawaii culture) 🎀💨",
+            f"{member.mention}'
